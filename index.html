@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepthi V S | Cybersecurity Undergraduate | SOC Analyst</title>
+  <meta name="description"
+    content="Deepthi V S — Cybersecurity undergraduate focused on SOC operations, threat detection, VAPT, network security, security automation, software development, and practical cybersecurity projects.">
+  <meta name="author" content="Deepthi V S">
+  <meta name="theme-color" content="#07111F">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Deepthi V S | Cybersecurity Undergraduate | SOC Analyst">
+  <meta property="og:description"
+    content="Cybersecurity undergraduate focused on SOC operations, threat detection, VAPT, network security, security automation, and practical security engineering.">
+  <meta property="og:image" content="My photo formal.png">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2322D3EE' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/><path d='M12 8v4'/><circle cx='12' cy='16' r='1'/></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Ambient SOC Grid & Background Structure -->
+  <div class="soc-grid-background" aria-hidden="true"></div>
+  <div class="soc-radial-glow top-left" aria-hidden="true"></div>
+  <div class="soc-radial-glow bottom-right" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <a href="#home" class="brand-logo" aria-label="Deepthi V S Home">
+        <span class="logo-radar-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <circle cx="12" cy="12" r="6" />
+            <circle cx="12" cy="12" r="2" />
+            <path d="M12 2v10l7 4" />
+          </svg>
+        </span>
+        <div class="logo-text-group">
+          <span class="logo-name">DEEPTHI V S</span>
+          <span class="logo-status-tag">
+            <span class="pulse-dot-green"></span>
+            SOC ANALYST
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#opportunities" class="nav-link">Opportunities</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="header-actions">
+        <!-- Resume Button triggers immediate download -->
+        <a href="Deepthi V S Resume (1).pdf" download="Deepthi_V_S_Resume.pdf"
+          class="btn btn-outline-cyan btn-sm header-resume-btn" title="Download Deepthi V S Resume (PDF)">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+            <polyline points="10 9 9 9 8 9" />
+          </svg>
+          <span>Resume</span>
+        </a>
+        <a href="#contact" class="btn btn-cyan btn-sm header-hire-btn">
+          <span>Hire Me</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu"
+          aria-expanded="false" aria-controls="mobileNavDrawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Nav -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+      <div class="drawer-header">
+        <div class="drawer-brand">
+          <span class="logo-name">DEEPTHI V S</span>
+          <span class="drawer-status"><span class="pulse-dot-green"></span> SOC OPERATIONS</span>
+        </div>
+        <button type="button" class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close navigation menu">
+          &times;
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-link">Home</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#education" class="mobile-link">Education</a></li>
+        <li><a href="#experience" class="mobile-link">Experience</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#achievements" class="mobile-link">Achievements</a></li>
+        <li><a href="#opportunities" class="mobile-link">Opportunities</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+      <div class="drawer-actions">
+        <!-- Resume download in drawer -->
+        <a href="Deepthi V S Resume (1).pdf" download="Deepthi_V_S_Resume.pdf" class="btn btn-outline-cyan btn-block">
+          Download Resume (PDF)
+        </a>
+        <a href="#contact" class="btn btn-cyan btn-block mobile-hire-btn">
+          Hire Me
+        </a>
+      </div>
+    </div>
+    <div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+  </header>
+
+  <main id="mainContent">
+    <!-- ==================== 1. HERO SECTION ==================== -->
+    <section class="hero-section" id="home" aria-label="Introduction & Overview">
+      <div class="container hero-container">
+
+        <!-- Left: Text Content -->
+        <div class="hero-content">
+          <div class="hero-status-pill">
+            <span class="pulse-dot-cyan"></span>
+            <span class="status-pill-text">FINAL YEAR · EXPECTED 2027 · BENGALURU, INDIA</span>
+          </div>
+
+          <h1 class="hero-headline">
+            <span class="hero-greeting">Hi, I'm</span>
+            <span class="hero-name-full">DEEPTHI V S</span>
+
+          </h1>
+
+          <div class="hero-title-box">
+            <div class="hero-primary-role">
+              <span class="role-badge-soc">PRIMARY IDENTITY: SOC ANALYST</span>
+            </div>
+            <p class="hero-professional-title">
+              Cybersecurity Undergraduate · VAPT &amp; SOC Enthusiast
+            </p>
+          </div>
+
+          <div class="hero-tagline-panel">
+            <span class="tagline-symbol">//</span>
+            <span class="hero-tagline">MONITOR. ANALYZE. RESPOND.</span>
+          </div>
+
+          <p class="hero-description">
+            Dedicated to <strong>Security Operations Center (SOC) operations</strong>,
+            <strong>threat detection</strong>, <strong>vulnerability assessment &amp; penetration testing
+              (VAPT)</strong>,
+            <strong>network security</strong>, and <strong>security automation</strong>. Bridging hands-on defensive
+            monitoring
+            with practical security tooling and modern software development.
+          </p>
+
+          <!-- Call To Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-cyan">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+              <span>Projects</span>
+            </a>
+
+            <!-- Resume Button downloads actual PDF -->
+            <a href="Deepthi V S Resume (1).pdf" download="Deepthi_V_S_Resume.pdf" class="btn btn-outline-cyan"
+              title="Download Resume PDF">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+              </svg>
+              <span>Resume</span>
+            </a>
+
+            <a href="https://tryhackme.com/p/deepudeepthi452005?tab=yearly-activity" target="_blank"
+              rel="noopener noreferrer" class="btn btn-panel">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.93V18h-2v-1.07c-2.83-.48-5-2.94-5-5.93h2c0 2.21 1.79 4 4 4s4-1.79 4-4h2c0 2.99-2.17 5.45-5 5.93zM12 6c1.66 0 3 1.34 3 3 0 .78-.3 1.49-.79 2.02l-1.42-1.42c.13-.18.21-.4.21-.6 0-.55-.45-1-1-1s-1 .45-1 1c0 .2.08.42.21.6L9.79 11.02C9.3 10.49 9 9.78 9 9c0-1.66 1.34-3 3-3z" />
+              </svg>
+              <span>TryHackMe</span>
+            </a>
+
+            <a href="https://linkedin.com/in/deepthi-v-s-a1a448366" target="_blank" rel="noopener noreferrer"
+              class="btn btn-panel">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.65 1.65 0 1 0 0-3.3 1.66 1.66 0 0 0 0 3.3m1.4 9.74V10.13H5.06v8.37h2.8z" />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <a href="#contact" class="btn btn-hire-accent">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <span>Hire Me</span>
+            </a>
+          </div>
+
+          <!-- Quick Social Contact Badges -->
+          <div class="hero-social-strip">
+            <span class="strip-label">DIRECT CHANNELS:</span>
+            <a href="https://github.com/Deepthi452005" target="_blank" rel="noopener noreferrer"
+              class="social-icon-chip" title="GitHub Profile">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path
+                  d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="mailto:deepudeepthi452005@gmail.com" class="social-icon-chip" title="Email Deepthi">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <span>Email</span>
+            </a>
+            <a href="https://wa.me/919902641029" target="_blank" rel="noopener noreferrer" class="social-icon-chip"
+              title="WhatsApp Chat">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path
+                  d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.11-.55-1.28-.61-.17-.07-.3-.09-.43.09-.13.19-.51.64-.62.77-.12.13-.23.15-.42.06-.19-.09-.81-.3-1.54-.95-.57-.51-.95-1.14-1.06-1.33-.11-.19-.01-.3.08-.39.09-.09.19-.23.29-.34.1-.12.13-.19.19-.32.07-.13.03-.25-.02-.34-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.51.24-.18.19-.68.66-.68 1.62s.7 1.88.79 2.01c.1.13 1.37 2.09 3.32 2.93.46.2.83.32 1.11.41.47.15.89.13 1.23.08.38-.06 1.11-.45 1.27-.89.16-.44.16-.81.11-.89-.05-.08-.18-.14-.37-.24z" />
+              </svg>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Non-Circular Framed Profile Image Panel + SOC Info Box -->
+        <div class="hero-image-wrapper">
+          <div class="soc-profile-frame-rect">
+            <!-- Subtle corner accents -->
+            <div class="profile-frame-corner top-left" aria-hidden="true"></div>
+            <div class="profile-frame-corner top-right" aria-hidden="true"></div>
+            <div class="profile-frame-corner bottom-left" aria-hidden="true"></div>
+            <div class="profile-frame-corner bottom-right" aria-hidden="true"></div>
+
+            <!-- Rectangular image container -->
+            <div class="profile-image-box">
+              <img src="My photo formal.png" alt="Deepthi V S - Cybersecurity Undergraduate &amp; SOC Analyst"
+                class="profile-img" loading="eager" width="310" height="385">
+            </div>
+          </div>
+
+          <!-- Compact SOC Information Box -->
+          <div class="hero-soc-infobox" aria-label="SOC Analyst Profile Specifications">
+            <div class="soc-infobox-header">
+              <span class="soc-infobox-dot" aria-hidden="true"></span>
+              <span class="soc-infobox-title">ANALYST PROFILE // SOC-01</span>
+            </div>
+            <div class="soc-infobox-grid">
+              <div class="soc-infobox-row">
+                <span class="soc-infobox-key">NAME:</span>
+                <span class="soc-infobox-val">DEEPTHI V S</span>
+              </div>
+              <div class="soc-infobox-row">
+                <span class="soc-infobox-key">PRIMARY ROLE:</span>
+                <span class="soc-infobox-val highlight">SOC ANALYST</span>
+              </div>
+              <div class="soc-infobox-row">
+                <span class="soc-infobox-key">FOCUS:</span>
+                <span class="soc-infobox-val">SOC OPERATIONS</span>
+              </div>
+              <div class="soc-infobox-row">
+                <span class="soc-infobox-key">SPECIALIZATION:</span>
+                <span class="soc-infobox-val">THREAT DETECTION</span>
+              </div>
+              <div class="soc-infobox-row">
+                <span class="soc-infobox-key">SECURITY FOCUS:</span>
+                <span class="soc-infobox-val">SECURITY MONITORING</span>
+              </div>
+              <div class="soc-infobox-row">
+                <span class="soc-infobox-key">CAREER FOCUS:</span>
+                <span class="soc-infobox-val highlight">SOC &rarr; BLUE TEAM</span>
+              </div>
+              <div class="soc-infobox-row">
+                <span class="soc-infobox-key">STATUS:</span>
+                <span class="soc-infobox-val">FINAL YEAR</span>
+              </div>
+              <div class="soc-infobox-row">
+                <span class="soc-infobox-key">EXPECTED GRADUATION:</span>
+                <span class="soc-infobox-val">2027</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 2. ABOUT ME & EDUCATION ==================== -->
+    <section class="section about-section" id="about" aria-label="About Deepthi V S">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">// 01. PROFILE OVERVIEW</div>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Dedicated cybersecurity undergraduate translating defensive theory into practical
+            security operations</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Main Narrative Panel -->
+          <div class="about-narrative-panel panel">
+            <div class="panel-header-bar">
+              <span class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot amber"></span>
+                <span class="dot green"></span>
+              </span>
+              <span class="panel-title-text">DEEPTHI_PROFILE.LOG</span>
+              <span class="panel-meta-tag">SOC CANDIDATE</span>
+            </div>
+
+            <div class="about-body-text">
+              <p class="lead-paragraph">
+                I’m <strong>Deepthi V S</strong>, a Cybersecurity undergraduate and VAPT &amp; SOC enthusiast with a
+                strong interest in cybersecurity, threat detection, vulnerability assessment, and security engineering.
+              </p>
+              <p>
+                I enjoy turning cybersecurity concepts into practical solutions through hands-on projects, internships,
+                CTF competitions, and security-focused development. My experience includes Vulnerability Assessment and
+                Penetration Testing, web application security, SOC monitoring, network analysis, threat detection, and
+                security auditing.
+              </p>
+              <p>
+                Through my internships and projects, I’ve worked with tools and technologies such as
+                <span class="highlight-cyan">Kali Linux</span>, <span class="highlight-cyan">Nmap</span>, <span
+                  class="highlight-cyan">Wireshark</span>,
+                <span class="highlight-cyan">Burp Suite</span>, <span class="highlight-cyan">Metasploit</span>, <span
+                  class="highlight-cyan">Splunk</span>,
+                <span class="highlight-cyan">Python</span>, <span class="highlight-cyan">React.js</span>, and <span
+                  class="highlight-cyan">Snort</span>.
+                I have also worked on projects involving automated reconnaissance, Windows security event monitoring,
+                CIS Benchmark auditing, phishing awareness simulations, incident ticketing, and gamified cybersecurity
+                learning.
+              </p>
+              <p>
+                I’m continuously developing my skills through real-world security challenges, Capture the Flag
+                competitions, and practical cybersecurity programs. My goal is to build a career in cybersecurity where
+                I can contribute to identifying threats, securing systems, and developing practical security solutions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: Education Panel (Integrated directly inside About Me) -->
+          <div class="about-education-panel" id="education">
+            <div class="panel about-education-box">
+              <div class="panel-header-bar">
+                <span class="terminal-dots">
+                  <span class="dot cyan"></span>
+                  <span class="dot blue"></span>
+                  <span class="dot green"></span>
+                </span>
+                <span class="panel-title-text">EDUCATION_CREDENTIALS.LOG</span>
+                <span class="panel-meta-tag">ACADEMIC</span>
+              </div>
+
+              <div class="about-education-body">
+                <div class="about-edu-title-strip">
+                  <h3 class="about-edu-section-title">Education</h3>
+                  <span class="edu-domain-pill">ACADEMIC BACKGROUND</span>
+                </div>
+
+                <div class="about-edu-cards-list">
+                  <!-- 1. B.E. Computer Science (Cyber Security) -->
+                  <div class="about-edu-item current-edu">
+                    <div class="about-edu-header">
+                      <span class="about-edu-year">2023 – 2027 (Expected)</span>
+                      <span class="about-edu-score">CGPA: 8.30 / 10</span>
+                    </div>
+                    <h4 class="about-edu-degree">B.E. – Computer Science (Cyber Security)</h4>
+                    <p class="about-edu-school">Sambhram Institute of Technology, Bengaluru</p>
+                  </div>
+
+                  <!-- 2. Pre-University Course (PUC) -->
+                  <div class="about-edu-item">
+                    <div class="about-edu-header">
+                      <span class="about-edu-year">2023</span>
+                      <span class="about-edu-score">Score: 85.5%</span>
+                    </div>
+                    <h4 class="about-edu-degree">Pre-University Course (PUC)</h4>
+                    <p class="about-edu-school">Narayana PU College, Bengaluru</p>
+                  </div>
+
+                  <!-- 3. SSLC -->
+                  <div class="about-edu-item">
+                    <div class="about-edu-header">
+                      <span class="about-edu-year">2021</span>
+                      <span class="about-edu-score">Score: 84.96%</span>
+                    </div>
+                    <h4 class="about-edu-degree">SSLC</h4>
+                    <p class="about-edu-school">Cluny Convent High School, Bengaluru</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. EXPERIENCE / INTERNSHIPS ==================== -->
+    <section class="section experience-section" id="experience" aria-label="Professional Experience & Internships">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">// 02. PRACTICAL EXPERIENCE</div>
+          <h2 class="section-title">Internships &amp; Experience</h2>
+          <p class="section-subtitle">Click any internship card to inspect detailed responsibilities and security
+            operations scope</p>
+        </div>
+
+        <div class="experience-list">
+
+          <!-- Experience Card 1 (SOC Intern - Featured) -->
+          <article class="experience-card panel featured-experience-card" data-exp-id="exp-soc" tabindex="0"
+            role="button" aria-haspopup="dialog">
+            <div class="experience-badge-strip">
+              <span class="badge-featured-soc">
+                <span class="pulse-dot-green"></span>
+                CURRENT FOCUS · DIRECT SOC ALIGNMENT
+              </span>
+              <span class="exp-duration">July 2026 – Present</span>
+            </div>
+
+            <div class="exp-card-header">
+              <div class="exp-role-group">
+                <h3 class="exp-role-title">SOC Intern</h3>
+                <h4 class="exp-company-name">Supraja Technologies</h4>
+              </div>
+              <div class="exp-action-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </div>
+            </div>
+
+            <p class="exp-summary">
+              Actively monitoring security events and analyzing alerts using Splunk. Applying CVSS scoring to assess and
+              prioritize vulnerabilities, while working with IDS/IPS systems for network-based threat detection and
+              monitoring.
+            </p>
+
+            <div class="exp-tags-row">
+              <span class="tag tag-cyan">Splunk</span>
+              <span class="tag tag-green">SOC Monitoring</span>
+              <span class="tag tag-cyan">CVSS Scoring</span>
+              <span class="tag tag-cyan">IDS/IPS Systems</span>
+              <span class="tag tag-muted">Click for Case Details &rarr;</span>
+            </div>
+          </article>
+
+          <!-- Experience Card 2 (Ethical Hacking & VAPT) -->
+          <article class="experience-card panel" data-exp-id="exp-vapt" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="experience-badge-strip">
+              <span class="badge-sub-role">VAPT &amp; OFFENSIVE TESTING</span>
+              <span class="exp-duration">July 2025 – October 2025</span>
+            </div>
+
+            <div class="exp-card-header">
+              <div class="exp-role-group">
+                <h3 class="exp-role-title">Ethical Hacking &amp; VAPT Intern</h3>
+                <h4 class="exp-company-name">Supraja Technologies</h4>
+              </div>
+              <div class="exp-action-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </div>
+            </div>
+
+            <p class="exp-summary">
+              Conducted structured penetration testing following industry standards and performed OWASP Top 10 testing
+              on web applications. Developed an Advanced SQL Injection Scanner tool and gained practical exposure in
+              reconnaissance, exploitation, and security report writing.
+            </p>
+
+            <div class="exp-tags-row">
+              <span class="tag tag-amber">Penetration Testing</span>
+              <span class="tag tag-amber">OWASP Top 10</span>
+              <span class="tag tag-cyan">SQL Injection Scanner</span>
+              <span class="tag tag-muted">Security Reporting</span>
+            </div>
+          </article>
+
+          <!-- Experience Card 3 (Application Security) -->
+          <article class="experience-card panel" data-exp-id="exp-appsec" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="experience-badge-strip">
+              <span class="badge-sub-role">APPSEC &amp; ACCESS CONTROL</span>
+              <span class="exp-duration">September 2025 – October 2025</span>
+            </div>
+
+            <div class="exp-card-header">
+              <div class="exp-role-group">
+                <h3 class="exp-role-title">Application Security Intern</h3>
+                <h4 class="exp-company-name">Skillcraft Technologies</h4>
+              </div>
+              <div class="exp-action-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </div>
+            </div>
+
+            <p class="exp-summary">
+              Contributed to security-focused project development. Applied authentication bypass and privilege
+              escalation testing across application logic.
+            </p>
+
+            <div class="exp-tags-row">
+              <span class="tag tag-cyan">Auth Bypass</span>
+              <span class="tag tag-amber">Privilege Escalation</span>
+              <span class="tag tag-blue">Secure Development</span>
+            </div>
+          </article>
+
+          <!-- Experience Card 4 (Red Team Intern) -->
+          <article class="experience-card panel" data-exp-id="exp-redteam" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="experience-badge-strip">
+              <span class="badge-sub-role">ADVERSARY SIMULATION</span>
+              <span class="exp-duration">October 2025 – December 2025</span>
+            </div>
+
+            <div class="exp-card-header">
+              <div class="exp-role-group">
+                <h3 class="exp-role-title">Red Team Intern</h3>
+                <h4 class="exp-company-name">Elevate Labs</h4>
+              </div>
+              <div class="exp-action-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </div>
+            </div>
+
+            <p class="exp-summary">
+              Worked on simulated red-team scenarios and practiced web vulnerability discovery and exploitation
+              methodologies.
+            </p>
+
+            <div class="exp-tags-row">
+              <span class="tag tag-amber">Red-Team Simulation</span>
+              <span class="tag tag-amber">Vulnerability Exploitation</span>
+              <span class="tag tag-cyan">Web Assessment</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. PROJECTS (DOMAIN-WISE) ==================== -->
+    <section class="section projects-section" id="projects" aria-label="Technical & Security Projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">// 03. TOOLING &amp; DEVELOPMENT</div>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Hands-on security engineering, automated auditing, event monitoring, and web
+            application solutions</p>
+        </div>
+
+        <!-- Project Domain Filter Boxes -->
+        <div class="project-domain-filters" role="tablist" aria-label="Project Domain Categories">
+          <button type="button" class="domain-filter-btn active" data-domain="all" role="tab" aria-selected="true">
+            ALL
+          </button>
+          <button type="button" class="domain-filter-btn" data-domain="cybersecurity" role="tab" aria-selected="false">
+            CYBERSECURITY
+          </button>
+          <button type="button" class="domain-filter-btn" data-domain="soc-blue-team" role="tab" aria-selected="false">
+            SOC / BLUE TEAM
+          </button>
+          <button type="button" class="domain-filter-btn" data-domain="vapt-web-security" role="tab"
+            aria-selected="false">
+            VAPT / WEB SECURITY
+          </button>
+          <button type="button" class="domain-filter-btn" data-domain="security-automation" role="tab"
+            aria-selected="false">
+            SECURITY AUTOMATION
+          </button>
+          <button type="button" class="domain-filter-btn" data-domain="ai-ml-security" role="tab" aria-selected="false">
+            AI / ML SECURITY
+          </button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- 1. NYX NEXUS -->
+          <article class="project-card panel" data-project-id="proj-nyx" data-domains="cybersecurity ai-ml-security"
+            tabindex="0" role="button" aria-haspopup="dialog">
+            <div class="project-card-top">
+              <span class="project-num">PROJECT_01</span>
+              <span class="project-domain-tag tag-cyan">LEARNING &amp; AI</span>
+            </div>
+            <h3 class="project-title">NYX NEXUS</h3>
+            <h4 class="project-subtitle">Gamified Cybersecurity Learning Platform</h4>
+            <p class="project-desc">
+              Gamified cybersecurity learning platform with AI integration using Ollama. Built using React.js. Designed
+              interactive challenges and progress tracking for cybersecurity learning.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">React.js</span>
+              <span class="tech-badge">Ollama</span>
+              <span class="tech-badge">Interactive Security</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="view-case-link">Inspect Case Study &rarr;</span>
+            </div>
+          </article>
+
+          <!-- 2. AURA -->
+          <article class="project-card panel" data-project-id="proj-aura"
+            data-domains="cybersecurity soc-blue-team security-automation" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="project-card-top">
+              <span class="project-num">PROJECT_02</span>
+              <span class="project-domain-tag tag-green">SECURITY AUDITING</span>
+            </div>
+            <h3 class="project-title">AURA</h3>
+            <h4 class="project-subtitle">CIS Benchmark Auditing Tool</h4>
+            <p class="project-desc">
+              Automated security auditing against CIS Benchmarks. Detects security misconfigurations and gaps. Generates
+              compliance reports and supports remediation workflows.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">CIS Benchmarks</span>
+              <span class="tech-badge">Compliance Auditing</span>
+              <span class="tech-badge">Remediation</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="view-case-link">Inspect Case Study &rarr;</span>
+            </div>
+          </article>
+
+          <!-- 3. LOG MONITORING & ALERT SYSTEM -->
+          <article class="project-card panel featured-project-card" data-project-id="proj-logmon"
+            data-domains="cybersecurity soc-blue-team security-automation" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="project-card-top">
+              <span class="project-num">PROJECT_03</span>
+              <span class="project-domain-tag tag-green">SOC &amp; MONITORING</span>
+            </div>
+            <h3 class="project-title">LOG MONITORING &amp; ALERT SYSTEM</h3>
+            <h4 class="project-subtitle">Windows Security Event Monitoring</h4>
+            <p class="project-desc">
+              Python-based Windows security event monitoring system. Detects failed login attempts and suspicious
+              activities using Windows Event Logs, providing centralized alert visualization.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Windows Event Logs</span>
+              <span class="tech-badge">Alert Visualization</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="view-case-link">Inspect Case Study &rarr;</span>
+            </div>
+          </article>
+
+          <!-- 4. AUTOMATED RECONNAISSANCE TOOL -->
+          <article class="project-card panel" data-project-id="proj-recon"
+            data-domains="cybersecurity vapt-web-security security-automation" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="project-card-top">
+              <span class="project-num">PROJECT_04</span>
+              <span class="project-domain-tag tag-cyan">RECON &amp; SCANNING</span>
+            </div>
+            <h3 class="project-title">AUTOMATED RECONNAISSANCE TOOL</h3>
+            <h4 class="project-subtitle">Port Scanning &amp; Service Enumeration</h4>
+            <p class="project-desc">
+              Python-based reconnaissance tool that automates port scanning and service enumeration to support
+              information gathering during penetration testing.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Port Scanning</span>
+              <span class="tech-badge">Service Enumeration</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="view-case-link">Inspect Case Study &rarr;</span>
+            </div>
+          </article>
+
+          <!-- 5. BLOCKSECURE -->
+          <article class="project-card panel" data-project-id="proj-blocksec" data-domains="cybersecurity soc-blue-team"
+            tabindex="0" role="button" aria-haspopup="dialog">
+            <div class="project-card-top">
+              <span class="project-num">PROJECT_05</span>
+              <span class="project-domain-tag tag-blue">INCIDENT MANAGEMENT</span>
+            </div>
+            <h3 class="project-title">BLOCKSECURE</h3>
+            <h4 class="project-subtitle">Incident Ticketing System</h4>
+            <p class="project-desc">
+              Security incident ticketing system featuring a modern frontend dashboard. Supports complete incident
+              tracking, workflow management, and team collaboration.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">React.js</span>
+              <span class="tech-badge">Incident Ticketing</span>
+              <span class="tech-badge">Frontend Dashboard</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="view-case-link">Inspect Case Study &rarr;</span>
+            </div>
+          </article>
+
+          <!-- 6. PHISHING EMAIL GENERATOR -->
+          <article class="project-card panel" data-project-id="proj-phish"
+            data-domains="cybersecurity security-automation vapt-web-security" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="project-card-top">
+              <span class="project-num">PROJECT_06</span>
+              <span class="project-domain-tag tag-amber">SECURITY AWARENESS</span>
+            </div>
+            <h3 class="project-title">PHISHING EMAIL GENERATOR</h3>
+            <h4 class="project-subtitle">Phishing Simulation Tool</h4>
+            <p class="project-desc">
+              Python-based phishing simulation tool utilizing customized HTML templates and SMTP to support realistic
+              organizational security awareness and training exercises.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">HTML Templates</span>
+              <span class="tech-badge">SMTP Protocol</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="view-case-link">Inspect Case Study &rarr;</span>
+            </div>
+          </article>
+
+          <!-- 7. BRUTE FORCE LOGIN SIMULATOR & CRONX -->
+          <article class="project-card panel" data-project-id="proj-brute"
+            data-domains="cybersecurity vapt-web-security security-automation" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="project-card-top">
+              <span class="project-num">PROJECT_07</span>
+              <span class="project-domain-tag tag-cyan">AUTOMATION &amp; TESTING</span>
+            </div>
+            <h3 class="project-title">BRUTE FORCE LOGIN SIMULATOR </h3>
+            <h4 class="project-subtitle">Credential Attack &amp; Task Automation</h4>
+            <p class="project-desc">
+              Python-based credential attack simulation demonstrating authentication weaknesses and password-policy
+              validation, paired with CronX scheduled security automation.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Authentication Testing</span>
+              <span class="tech-badge">CronX Automation</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="view-case-link">Inspect Case Study &rarr;</span>
+            </div>
+          </article>
+
+          <!-- 8. AEGISGUARD -->
+          <article class="project-card panel" data-project-id="proj-aegis"
+            data-domains="ai-ml-security soc-blue-team cybersecurity security-automation" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="project-card-top">
+              <span class="project-num">PROJECT_08</span>
+              <span class="project-domain-tag tag-green">AI &amp; DEFENSIVE ML</span>
+            </div>
+            <h3 class="project-title">AEGISGUARD</h3>
+            <h4 class="project-subtitle">Adaptive ML-Driven DoS Detection &amp; Defense Engine</h4>
+            <p class="project-desc">
+              Controlled cybersecurity lab platform combining unsupervised ML (Isolation Forest) with adaptive rate
+              limiting to detect abnormal HTTP traffic and dynamically strengthen defenses.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Flask</span>
+              <span class="tech-badge">Isolation Forest</span>
+              <span class="tech-badge">Adaptive Defense</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="view-case-link">Inspect Case Study &rarr;</span>
+            </div>
+          </article>
+
+          <!-- 9. AI + BLOCKCHAIN DIGITAL FORENSICS (FINAL YEAR PROJECT) -->
+          <article class="project-card panel" data-project-id="proj-forensics"
+            data-domains="cybersecurity ai-ml-security" tabindex="0" role="button" aria-haspopup="dialog">
+            <div class="project-card-top">
+              <span class="project-num">PROJECT_09</span>
+              <span class="project-domain-tag tag-cyan">DIGITAL FORENSICS &amp; AI</span>
+            </div>
+            <h3 class="project-title">AI + BLOCKCHAIN DIGITAL FORENSICS</h3>
+            <h4 class="project-subtitle">Forensic Investigation with Blockchain Chain of Custody</h4>
+            <p class="project-desc">
+              Forensic investigation tool using AI for evidence analysis and blockchain to guarantee chain of custody
+              integrity, preventing evidence tampering. Final Year Project.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Blockchain</span>
+              <span class="tech-badge">AI/ML</span>
+              <span class="tech-badge">Digital Forensics</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="view-case-link">Inspect Case Study &rarr;</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. SKILLS ==================== -->
+    <section class="section skills-section" id="skills" aria-label="Technical Skills & Proficiencies">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">// 04. TECHNICAL COMPETENCIES</div>
+          <h2 class="section-title">Core Skills</h2>
+          <p class="section-subtitle">Specialized technical proficiencies categorized by operational security domain</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Skill Card 1: SECURITY OPERATIONS (Cyan + Green) -->
+          <div class="skill-category-card panel soc-cat-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon icon-green">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <div class="skill-cat-title-group">
+                <h3 class="skill-cat-title">SECURITY OPERATIONS</h3>
+                <span class="skill-domain-pill pill-green">DEFENSIVE &amp; MONITORING</span>
+              </div>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip chip-green">SOC Operations</span>
+              <span class="skill-chip chip-green">Threat Detection</span>
+              <span class="skill-chip chip-green">IDS/IPS</span>
+              <span class="skill-chip chip-green">Network Analysis</span>
+              <span class="skill-chip chip-green">CVSS Scoring</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: VAPT & SECURITY TESTING (Cyan + Amber/Red) -->
+          <div class="skill-category-card panel vapt-cat-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon icon-amber">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="22" y1="12" x2="18" y2="12" />
+                  <line x1="6" y1="12" x2="2" y2="12" />
+                  <line x1="12" y1="6" x2="12" y2="2" />
+                  <line x1="12" y1="22" x2="12" y2="18" />
+                </svg>
+              </div>
+              <div class="skill-cat-title-group">
+                <h3 class="skill-cat-title">VAPT &amp; SECURITY TESTING</h3>
+                <span class="skill-domain-pill pill-amber">ASSESSMENT &amp; AUDITING</span>
+              </div>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip chip-amber">VAPT</span>
+              <span class="skill-chip chip-amber">Web Application Security</span>
+              <span class="skill-chip chip-amber">Vulnerability Assessment</span>
+              <span class="skill-chip chip-amber">Penetration Testing</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: SECURITY TOOLS (Cyan) -->
+          <div class="skill-category-card panel tools-cat-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon icon-cyan">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                </svg>
+              </div>
+              <div class="skill-cat-title-group">
+                <h3 class="skill-cat-title">SECURITY TOOLS</h3>
+                <span class="skill-domain-pill pill-cyan">OPERATIONAL TOOLING</span>
+              </div>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip chip-cyan">Kali Linux</span>
+              <span class="skill-chip chip-cyan">Nmap</span>
+              <span class="skill-chip chip-cyan">Wireshark</span>
+              <span class="skill-chip chip-cyan">Burp Suite</span>
+              <span class="skill-chip chip-cyan">Metasploit</span>
+              <span class="skill-chip chip-cyan">OWASP ZAP</span>
+              <span class="skill-chip chip-cyan">Nessus</span>
+              <span class="skill-chip chip-cyan highlight-tool">Splunk</span>
+              <span class="skill-chip chip-cyan">Modbus Poll</span>
+              <span class="skill-chip chip-cyan highlight-tool">Snort</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 4: PROGRAMMING & DEVELOPMENT (Cyan + Blue) -->
+          <div class="skill-category-card panel dev-cat-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon icon-blue">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+              <div class="skill-cat-title-group">
+                <h3 class="skill-cat-title">PROGRAMMING &amp; DEVELOPMENT</h3>
+                <span class="skill-domain-pill pill-blue">SOFTWARE ENGINEERING</span>
+              </div>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip chip-blue">Python</span>
+              <span class="skill-chip chip-blue">React.js</span>
+              <span class="skill-chip chip-blue">HTML</span>
+              <span class="skill-chip chip-blue">CSS</span>
+              <span class="skill-chip chip-blue">GitHub</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 5: SECURITY KNOWLEDGE (Cyan) -->
+          <div class="skill-category-card panel knowledge-cat-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon icon-cyan">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                </svg>
+              </div>
+              <div class="skill-cat-title-group">
+                <h3 class="skill-cat-title">SECURITY KNOWLEDGE</h3>
+                <span class="skill-domain-pill pill-cyan">THEORETICAL &amp; APPLIED</span>
+              </div>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip chip-cyan">Cryptography</span>
+              <span class="skill-chip chip-cyan">Steganography</span>
+              <span class="skill-chip chip-cyan">Security Auditing</span>
+              <span class="skill-chip chip-cyan">Threat Detection</span>
+              <span class="skill-chip chip-cyan">Network Security</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 6: PROFESSIONAL SKILLS (Cyan + Cool Gray) -->
+          <div class="skill-category-card panel prof-cat-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon icon-gray">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <div class="skill-cat-title-group">
+                <h3 class="skill-cat-title">PROFESSIONAL SKILLS</h3>
+                <span class="skill-domain-pill pill-gray">COLLABORATION &amp; AGILITY</span>
+              </div>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip chip-gray">Problem Solving</span>
+              <span class="skill-chip chip-gray">Communication</span>
+              <span class="skill-chip chip-gray">Teamwork</span>
+              <span class="skill-chip chip-gray">Adaptability</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. ACHIEVEMENTS & CTFS (DEDUPLICATED) ==================== -->
+    <section class="section achievements-section" id="achievements" aria-label="Achievements & CTF Honors">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">// 05. COMPETITIVE RECORD</div>
+          <h2 class="section-title">Achievements &amp; CTF Honors</h2>
+          <p class="section-subtitle">Click on CTF achievements to view verified certificates and award details</p>
+        </div>
+
+        <div class="achievements-grid">
+
+          <!-- 1. Ghost Wire 2026 (Image) -->
+          <article class="achievement-card panel with-image" data-achieve-id="ach-3" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="achieve-thumb-wrapper">
+              <img src="assets/Atria CTF winner.jpeg"
+                alt="CTF Winner - Ghost Wire, 2026 at Atria Institute of Technology" class="achieve-thumb"
+                loading="lazy">
+              <div class="thumb-overlay">
+                <span class="overlay-text">View Certificate &rarr;</span>
+              </div>
+            </div>
+            <div class="achieve-card-content">
+              <div class="achieve-badge-row">
+                <span class="achieve-tag tag-cyan">CTF WINNER</span>
+                <span class="achieve-year">2026</span>
+              </div>
+              <h3 class="achieve-title">CTF Winner – Ghost Wire, 2026</h3>
+              <p class="achieve-meta">Acharya Institute of Technology</p>
+            </div>
+          </article>
+
+          <!-- 4. Tech Habba 2025 (Image) -->
+          <article class="achievement-card panel with-image" data-achieve-id="ach-4" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="achieve-thumb-wrapper">
+              <img src="assets/Acharya CTF Winner.jpeg" alt="CTF Winner - Tech Habba, 2025" class="achieve-thumb"
+                loading="lazy">
+              <div class="thumb-overlay">
+                <span class="overlay-text">View Certificate &rarr;</span>
+              </div>
+            </div>
+            <div class="achieve-card-content">
+              <div class="achieve-badge-row">
+                <span class="achieve-tag tag-cyan">CTF WINNER</span>
+                <span class="achieve-year">2025</span>
+              </div>
+              <h3 class="achieve-title">CTF Winner – Tech Habba, 2025</h3>
+              <p class="achieve-meta">Acharya Institute of Technology</p>
+            </div>
+          </article>
+
+          <!-- 5. Supraja Level 4 2026 (Image) -->
+          <article class="achievement-card panel with-image" data-achieve-id="ach-5" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="achieve-thumb-wrapper">
+              <img src="assets/CTF winner - Supraja 4.jpeg"
+                alt="CTF Winner - Supraja Technologies SDP Level 4, 2026 Certificate" class="achieve-thumb"
+                loading="lazy">
+              <div class="thumb-overlay">
+                <span class="overlay-text">View Certificate &rarr;</span>
+              </div>
+            </div>
+            <div class="achieve-card-content">
+              <div class="achieve-badge-row">
+                <span class="achieve-tag tag-cyan">SDP LEVEL 4</span>
+                <span class="achieve-year">2026</span>
+              </div>
+              <h3 class="achieve-title">CTF Winner – Supraja Technologies SDP Level 4</h3>
+              <p class="achieve-meta">Supraja Technologies (2026)</p>
+            </div>
+          </article>
+
+          <!-- 6. Supraja Level 3 2025 (Image) -->
+          <article class="achievement-card panel with-image" data-achieve-id="ach-6" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="achieve-thumb-wrapper">
+              <img src="assets/CTF winner - Supraja 3.jpeg"
+                alt="CTF Winner - Supraja Technologies SDP Level 3, 2025 Certificate" class="achieve-thumb"
+                loading="lazy">
+              <div class="thumb-overlay">
+                <span class="overlay-text">View Certificate &rarr;</span>
+              </div>
+            </div>
+            <div class="achieve-card-content">
+              <div class="achieve-badge-row">
+                <span class="achieve-tag tag-cyan">SDP LEVEL 3</span>
+                <span class="achieve-year">2025</span>
+              </div>
+              <h3 class="achieve-title">CTF Winner – Supraja Technologies SDP Level 3</h3>
+              <p class="achieve-meta">Supraja Technologies (2025)</p>
+            </div>
+          </article>
+
+          <!-- 7. Supraja Level 2 2025 (Image) -->
+          <article class="achievement-card panel with-image" data-achieve-id="ach-7" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="achieve-thumb-wrapper">
+              <img src="assets/CTF winner - Supraja 2.jpeg"
+                alt="CTF Winner - Supraja Technologies SDP Level 2, 2025 Certificate" class="achieve-thumb"
+                loading="lazy">
+              <div class="thumb-overlay">
+                <span class="overlay-text">View Certificate &rarr;</span>
+              </div>
+            </div>
+            <div class="achieve-card-content">
+              <div class="achieve-badge-row">
+                <span class="achieve-tag tag-cyan">SDP LEVEL 2</span>
+                <span class="achieve-year">2025</span>
+              </div>
+              <h3 class="achieve-title">CTF Winner – Supraja Technologies SDP Level 2</h3>
+              <p class="achieve-meta">Supraja Technologies (2025)</p>
+            </div>
+          </article>
+
+          <!-- 8. Supraja Level 1 Runner-Up 2024 (Image) -->
+          <article class="achievement-card panel with-image" data-achieve-id="ach-8" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="achieve-thumb-wrapper">
+              <img src="assets/CTF runner up - Supraja 1.jpeg"
+                alt="CTF Runner-Up - Supraja Technologies SDP Level 1, 2024 Certificate" class="achieve-thumb"
+                loading="lazy">
+              <div class="thumb-overlay">
+                <span class="overlay-text">View Certificate &rarr;</span>
+              </div>
+            </div>
+            <div class="achieve-card-content">
+              <div class="achieve-badge-row">
+                <span class="achieve-tag tag-amber">RUNNER-UP</span>
+                <span class="achieve-year">2024</span>
+              </div>
+              <h3 class="achieve-title">CTF Runner-Up – Supraja Technologies SDP Level 1</h3>
+              <p class="achieve-meta">Supraja Technologies (2024)</p>
+            </div>
+          </article>
+
+          <!-- 9. Advent of Cyber 2025 (Text Card - No Image) -->
+          <article class="achievement-card panel text-only-card">
+            <div class="achieve-card-content">
+              <div class="achieve-badge-row">
+                <span class="achieve-tag tag-cyan">CHALLENGE COMPLETION</span>
+                <span class="achieve-year">2025</span>
+              </div>
+              <h3 class="achieve-title">Completed 24 Security Challenges</h3>
+              <p class="achieve-meta">TryHackMe Advent of Cyber 2025</p>
+              <p class="achieve-desc">Successfully completed all 24 security challenge tracks encompassing web
+                exploitation, log analysis, threat intelligence, and defensive forensics.</p>
+            </div>
+          </article>
+
+          <!-- 10. Active CTF Participant (Text Card - No Image) -->
+          <article class="achievement-card panel text-only-card">
+            <div class="achieve-card-content">
+              <div class="achieve-badge-row">
+                <span class="achieve-tag tag-green">ACTIVE PARTICIPATION</span>
+                <span class="achieve-type">PLATFORMS</span>
+              </div>
+              <h3 class="achieve-title">Active CTF Participant</h3>
+              <p class="achieve-meta">TryHackMe &amp; Hack The Box</p>
+              <p class="achieve-desc">Continuously sharpening skills through active practice on defensive and offensive
+                challenge rooms, rooms analysis, and CTF simulations.</p>
+            </div>
+          </article>
+
+          <!-- 11. GenXHack Hackathon Volunteer (Text Card - No Image) -->
+          <article class="achievement-card panel text-only-card">
+            <div class="achieve-card-content">
+              <div class="achieve-badge-row">
+                <span class="achieve-tag tag-blue">VOLUNTEER</span>
+                <span class="achieve-type">COMMUNITY</span>
+              </div>
+              <h3 class="achieve-title">Technical Volunteer</h3>
+              <p class="achieve-meta">GenXHack Hackathon</p>
+              <p class="achieve-desc">Assisted participants with technical setup, troubleshooting environment
+                configurations, and ensured smooth event coordination.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. OPEN TO OPPORTUNITIES ==================== -->
+    <section class="section opportunities-section" id="opportunities" aria-label="Open to Opportunities">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">// 06. CAREER ENGAGEMENT</div>
+          <h2 class="section-title">Open to Opportunities</h2>
+          <p class="section-subtitle">
+            Exploring full-time roles, internships, security engagements, CTF collaborations, and development projects.
+            Click any category to initiate contact.
+          </p>
+        </div>
+
+        <div class="opportunities-grid">
+
+          <!-- 1. SOFTWARE ENGINEER -->
+          <div class="opportunity-card panel opp-software" data-opp-key="software-engineer" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="opp-top-strip">
+              <span class="opp-status-indicator">● OPEN TO</span>
+              <span class="opp-accent-tag tag-cyan">ENGINEERING</span>
+            </div>
+            <div class="opp-icon cyan-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <h3 class="opp-title">SOFTWARE ENGINEER</h3>
+            <p class="opp-desc">
+              Open to software engineering opportunities involving secure, practical and scalable application
+              development.
+            </p>
+            <div class="opp-card-cta">
+              <span>Contact for Software Opportunity &rarr;</span>
+            </div>
+          </div>
+
+          <!-- 2. FULL STACK DEVELOPER -->
+          <div class="opportunity-card panel opp-fullstack" data-opp-key="full-stack" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="opp-top-strip">
+              <span class="opp-status-indicator">● OPEN TO</span>
+              <span class="opp-accent-tag tag-teal">WEB DEV</span>
+            </div>
+            <div class="opp-icon teal-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                <polyline points="2 17 12 22 22 17" />
+                <polyline points="2 12 12 17 22 12" />
+              </svg>
+            </div>
+            <h3 class="opp-title">FULL STACK DEVELOPER</h3>
+            <p class="opp-desc">
+              Open to full-stack development opportunities involving frontend, backend and complete web application
+              development.
+            </p>
+            <div class="opp-card-cta">
+              <span>Contact for Full Stack Opportunity &rarr;</span>
+            </div>
+          </div>
+
+          <!-- 3. FRONTEND DEVELOPER -->
+          <div class="opportunity-card panel opp-frontend" data-opp-key="frontend" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="opp-top-strip">
+              <span class="opp-status-indicator">● OPEN TO</span>
+              <span class="opp-accent-tag tag-light-cyan">UI / UX</span>
+            </div>
+            <div class="opp-icon light-cyan-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <h3 class="opp-title">FRONTEND DEVELOPER</h3>
+            <p class="opp-desc">
+              Open to frontend development opportunities focused on responsive, modern and user-friendly web
+              experiences.
+            </p>
+            <div class="opp-card-cta">
+              <span>Contact for Frontend Opportunity &rarr;</span>
+            </div>
+          </div>
+
+          <!-- 4. VAPT -->
+          <div class="opportunity-card panel opp-vapt" data-opp-key="vapt" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="opp-top-strip">
+              <span class="opp-status-indicator">● OPEN TO</span>
+              <span class="opp-accent-tag tag-amber">TESTING</span>
+            </div>
+            <div class="opp-icon amber-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="22" y1="12" x2="18" y2="12" />
+                <line x1="6" y1="12" x2="2" y2="12" />
+                <line x1="12" y1="6" x2="12" y2="2" />
+                <line x1="12" y1="22" x2="12" y2="18" />
+              </svg>
+            </div>
+            <h3 class="opp-title">VAPT</h3>
+            <p class="opp-desc">
+              Open to vulnerability assessment, penetration testing and application security opportunities.
+            </p>
+            <div class="opp-card-cta">
+              <span>Contact for VAPT Opportunity &rarr;</span>
+            </div>
+          </div>
+
+          <!-- 5. SOC (Primary Direction) -->
+          <div class="opportunity-card panel opp-soc featured-opp-card" data-opp-key="soc" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="opp-top-strip">
+              <span class="opp-status-indicator highlight-green">● PRIMARY AIM</span>
+              <span class="opp-accent-tag tag-green">OPERATIONS</span>
+            </div>
+            <div class="opp-icon green-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3 class="opp-title">SOC</h3>
+            <p class="opp-desc">
+              Open to SOC operations, security monitoring, alert analysis and threat detection opportunities.
+            </p>
+            <div class="opp-card-cta">
+              <span class="cta-bold">Contact for SOC Opportunity &rarr;</span>
+            </div>
+          </div>
+
+          <!-- 6. BLUE TEAM -->
+          <div class="opportunity-card panel opp-blueteam" data-opp-key="blue-team" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="opp-top-strip">
+              <span class="opp-status-indicator">● OPEN TO</span>
+              <span class="opp-accent-tag tag-green">DEFENSE</span>
+            </div>
+            <div class="opp-icon green-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </div>
+            <h3 class="opp-title">BLUE TEAM</h3>
+            <p class="opp-desc">
+              Open to defensive security, monitoring, incident detection and security operations opportunities.
+            </p>
+            <div class="opp-card-cta">
+              <span>Contact for Blue Team Opportunity &rarr;</span>
+            </div>
+          </div>
+
+          <!-- 7. ETHICAL HACKER -->
+          <div class="opportunity-card panel opp-ethical" data-opp-key="ethical-hacker" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="opp-top-strip">
+              <span class="opp-status-indicator">● OPEN TO</span>
+              <span class="opp-accent-tag tag-amber">RESEARCH</span>
+            </div>
+            <div class="opp-icon amber-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4zm0 2a2 2 0 0 1 2 2v2h-4V6a2 2 0 0 1 2-2z" />
+              </svg>
+            </div>
+            <h3 class="opp-title">ETHICAL HACKER</h3>
+            <p class="opp-desc">
+              Open to authorized security testing, vulnerability research and ethical hacking opportunities.
+            </p>
+            <div class="opp-card-cta">
+              <span>Contact for Ethical Hacking &rarr;</span>
+            </div>
+          </div>
+
+          <!-- 8. CTF INVITATIONS -->
+          <div class="opportunity-card panel opp-ctf" data-opp-key="ctf" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="opp-top-strip">
+              <span class="opp-status-indicator">● OPEN TO</span>
+              <span class="opp-accent-tag tag-cyan">CHALLENGE</span>
+            </div>
+            <div class="opp-icon cyan-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+            </div>
+            <h3 class="opp-title">CTF INVITATIONS</h3>
+            <p class="opp-desc">
+              Open to Capture The Flag competitions, cybersecurity events, CTF teams and security challenge invitations.
+            </p>
+            <div class="opp-card-cta">
+              <span>Invite to CTF Event &rarr;</span>
+            </div>
+          </div>
+
+          <!-- 9. FREELANCE PROJECTS -->
+          <div class="opportunity-card panel opp-freelance" data-opp-key="freelance" tabindex="0" role="button"
+            aria-haspopup="dialog">
+            <div class="opp-top-strip">
+              <span class="opp-status-indicator">● OPEN TO</span>
+              <span class="opp-accent-tag tag-teal">CONSULTING</span>
+            </div>
+            <div class="opp-icon teal-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+            </div>
+            <h3 class="opp-title">FREELANCE PROJECTS</h3>
+            <p class="opp-desc">
+              Open to selected freelance projects involving software development, web development, cybersecurity and
+              security-focused solutions.
+            </p>
+            <div class="opp-card-cta">
+              <span>Discuss Freelance Project &rarr;</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Opportunity Bottom Callout -->
+        <div class="opportunity-action-footer">
+          <h3 class="opp-footer-prompt">Interested in collaborating or hiring for one of these areas?</h3>
+          <div class="opp-btn-group">
+            <a href="#contact" class="btn btn-cyan btn-lg">
+              <span>LET'S WORK TOGETHER</span>
+            </a>
+            <a href="#contact" class="btn btn-outline-cyan btn-lg">
+              <span>CONTACT ME</span>
+            </a>
+            <a href="#contact" class="btn btn-hire-accent btn-lg">
+              <span>HIRE ME</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 8. CONTACT SECTION ==================== -->
+    <section class="section contact-section" id="contact" aria-label="Contact Information & Message Form">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">// 07. COMMUNICATION CHANNEL</div>
+          <h2 class="section-title">// CONTACT ME</h2>
+          <p class="section-subtitle">Reach out for SOC roles, cybersecurity opportunities, development engagements, or
+            collaborations</p>
+        </div>
+
+        <div class="contact-layout">
+
+          <!-- Left: Contact Details & Direct Channels -->
+          <div class="contact-info-panel">
+
+            <div class="panel contact-direct-card">
+              <h3 class="contact-card-title">Direct Inquiries</h3>
+              <p class="contact-card-sub">Feel free to connect directly via email, phone, or messaging platforms.</p>
+
+              <div class="contact-methods-list">
+
+                <!-- Email -->
+                <div class="contact-method-item">
+                  <div class="method-icon cyan-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                      <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">EMAIL</span>
+                    <a href="mailto:deepudeepthi452005@gmail.com" class="method-value">deepudeepthi452005@gmail.com</a>
+                  </div>
+                  <button type="button" class="copy-btn" data-copy="deepudeepthi452005@gmail.com" title="Copy Email">
+                    <span class="copy-text">Copy</span>
+                  </button>
+                </div>
+
+                <!-- Phone -->
+                <div class="contact-method-item">
+                  <div class="method-icon green-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">PHONE</span>
+                    <a href="tel:+919902641029" class="method-value">+91 9902641029</a>
+                  </div>
+                  <button type="button" class="copy-btn" data-copy="+919902641029" title="Copy Phone Number">
+                    <span class="copy-text">Copy</span>
+                  </button>
+                </div>
+
+                <!-- WhatsApp -->
+                <div class="contact-method-item">
+                  <div class="method-icon green-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                      <path
+                        d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19-.09-1.11-.55-1.28-.61-.17-.07-.3-.09-.43.09-.13.19-.51.64-.62.77-.12.13-.23.15-.42.06-.19-.09-.81-.3-1.54-.95-.57-.51-.95-1.14-1.06-1.33-.11-.19-.01-.3.08-.39.09-.09.19-.23.29-.34.1-.12.13-.19.19-.32.07-.13.03-.25-.02-.34-.05-.09-.43-1.04-.59-1.42-.16-.38-.32-.33-.44-.33h-.37c-.13 0-.34.05-.51.24-.18.19-.68.66-.68 1.62s.7 1.88.79 2.01c.1.13 1.37 2.09 3.32 2.93.46.2.83.32 1.11.41.47.15.89.13 1.23.08.38-.06 1.11-.45 1.27-.89.16-.44.16-.81.11-.89-.05-.08-.18-.14-.37-.24z" />
+                    </svg>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">WHATSAPP</span>
+                    <a href="https://wa.me/919902641029" target="_blank" rel="noopener noreferrer"
+                      class="method-value">+91 9902641029</a>
+                  </div>
+                  <a href="https://wa.me/919902641029" target="_blank" rel="noopener noreferrer" class="chat-btn"
+                    title="Open WhatsApp Chat">
+                    <span>Chat</span>
+                  </a>
+                </div>
+
+                <!-- Location -->
+                <div class="contact-method-item">
+                  <div class="method-icon teal-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">LOCATION</span>
+                    <span class="method-value">Bengaluru, Karnataka, India</span>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Verified Links -->
+              <div class="contact-links-block">
+                <span class="contact-links-title">VERIFIED PLATFORMS:</span>
+                <div class="contact-links-chips">
+                  <a href="https://linkedin.com/in/deepthi-v-s-a1a448366" target="_blank" rel="noopener noreferrer"
+                    class="verified-link-chip">
+                    <span>LinkedIn</span>
+                  </a>
+                  <a href="https://github.com/Deepthi452005" target="_blank" rel="noopener noreferrer"
+                    class="verified-link-chip">
+                    <span>GitHub</span>
+                  </a>
+                  <a href="https://tryhackme.com/p/deepudeepthi452005?tab=yearly-activity" target="_blank"
+                    rel="noopener noreferrer" class="verified-link-chip">
+                    <span>TryHackMe</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-panel panel">
+            <div class="panel-header-bar">
+              <span class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot amber"></span>
+                <span class="dot green"></span>
+              </span>
+              <span class="panel-title-text">SEND_MESSAGE.REQUEST</span>
+              <span class="panel-meta-tag">DIRECT TRANSMISSION</span>
+            </div>
+
+            <form id="contactForm" class="contact-form" novalidate>
+
+              <!-- Name Field -->
+              <div class="form-group">
+                <label for="userName" class="form-label">
+                  YOUR NAME <span class="required-star">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <input type="text" id="userName" name="userName" class="form-input"
+                    placeholder="e.g. Alex Morgan / Security Lead" required autocomplete="name">
+                </div>
+                <span class="field-error-msg" id="nameError">Please enter your name</span>
+              </div>
+
+              <!-- Email Field -->
+              <div class="form-group">
+                <label for="userEmail" class="form-label">
+                  YOUR EMAIL <span class="required-star">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <input type="email" id="userEmail" name="userEmail" class="form-input"
+                    placeholder="e.g. alex@company.com" required autocomplete="email">
+                </div>
+                <span class="field-error-msg" id="emailError">Please enter a valid email address</span>
+              </div>
+
+              <!-- Purpose / Opportunity Dropdown -->
+              <div class="form-group">
+                <label for="contactPurpose" class="form-label">
+                  PURPOSE / OPPORTUNITY <span class="required-star">*</span>
+                </label>
+                <div class="input-wrapper select-wrapper">
+                  <select id="contactPurpose" name="contactPurpose" class="form-select" required>
+                    <option value="" disabled selected>Select the engagement or opportunity...</option>
+                    <option value="SOC Opportunity">SOC Opportunity</option>
+                    <option value="Cybersecurity Analyst Opportunity">Cybersecurity Analyst Opportunity</option>
+                    <option value="VAPT / Penetration Testing Opportunity">VAPT / Penetration Testing Opportunity
+                    </option>
+                    <option value="Blue Team Opportunity">Blue Team Opportunity</option>
+                    <option value="Security Automation Opportunity">Security Automation Opportunity</option>
+                    <option value="Software Engineering Opportunity">Software Engineering Opportunity</option>
+                    <option value="Full Stack Developer Opportunity">Full Stack Developer Opportunity</option>
+                    <option value="Frontend Developer Opportunity">Frontend Developer Opportunity</option>
+                    <option value="Ethical Hacking Opportunity">Ethical Hacking Opportunity</option>
+                    <option value="CTF Invitation">CTF Invitation</option>
+                    <option value="Freelance Project">Freelance Project</option>
+                    <option value="Internship Opportunity">Internship Opportunity</option>
+                    <option value="Collaboration">Collaboration</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <span class="field-error-msg" id="purposeError">Please select an opportunity or inquiry purpose</span>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group">
+                <label for="userMessage" class="form-label">
+                  MESSAGE <span class="required-star">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <textarea id="userMessage" name="userMessage" class="form-textarea" rows="5"
+                    placeholder="Share role details, team scope, challenge invitation, or project requirements..."
+                    required></textarea>
+                </div>
+                <span class="field-error-msg" id="messageError">Please enter your message</span>
+              </div>
+
+              <!-- Form Submission Status Notification -->
+              <div class="form-status-alert" id="formStatusAlert" role="alert" style="display: none;"></div>
+
+              <!-- Submit Buttons -->
+              <div class="form-submit-row">
+                <button type="submit" class="btn btn-cyan btn-lg submit-btn" id="submitFormBtn">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13" />
+                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                  </svg>
+                  <span>Transmit Message</span>
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-primary-block">
+        <h2 class="footer-name">DEEPTHI V S</h2>
+        <p class="footer-title">Cybersecurity Undergraduate · VAPT &amp; SOC Enthusiast</p>
+        <p class="footer-location">Bengaluru, Karnataka, India</p>
+        <div class="footer-opp-chip">
+          <span class="pulse-dot-green"></span>
+          <span>OPEN TO OPPORTUNITIES</span>
+        </div>
+      </div>
+
+      <div class="footer-links-block">
+        <h3 class="footer-links-heading">PROFILES</h3>
+        <ul class="footer-links-list">
+          <li><a href="https://github.com/Deepthi452005" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/deepthi-v-s-a1a448366" target="_blank"
+              rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://tryhackme.com/p/deepudeepthi452005?tab=yearly-activity" target="_blank"
+              rel="noopener noreferrer">TryHackMe</a></li>
+          <li><a href="mailto:deepudeepthi452005@gmail.com">Email</a></li>
+          <li><a href="Deepthi V S Resume (1).pdf" download="Deepthi_V_S_Resume.pdf">Resume (PDF)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-container">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> DEEPTHI V S. All rights reserved.
+        </p>
+        <a href="#home" class="back-to-top-btn" aria-label="Back to top of page">
+          <span>Back to Top &uarr;</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== REUSABLE MODAL CONTAINER ==================== -->
+  <div class="modal-backdrop" id="appModal" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog panel" role="document">
+      <div class="modal-header-bar">
+        <div class="modal-header-left">
+          <span class="modal-type-badge" id="modalTypeBadge">DETAIL_VIEW</span>
+          <span class="modal-title-text" id="modalHeaderTitle">DETAILS</span>
+        </div>
+        <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal dialog">
+          &times;
+        </button>
+      </div>
+
+      <div class="modal-body-content" id="modalBodyContent">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
